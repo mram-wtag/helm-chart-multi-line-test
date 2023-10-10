@@ -4,10 +4,13 @@ releases:
     chart: './chart'
     set:
       - name: 'name'
-        value: {{ if eq (env "STAGE") "production" }}
-                 Production
-               {{ else if eq (env "STAGE") "integration" }}
-                 Integration
-               {{ else }}
-                 Staging
-               {{ end }}
+        value: |
+          {{ if eq (env "STAGE") "production" }}
+            Production
+            Cluster
+          {{ else if eq (env "STAGE") "integration" }}
+            Integration
+            cluster
+          {{ else }}
+            Staging
+          {{ end }}
