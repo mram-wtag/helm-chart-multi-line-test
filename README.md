@@ -1,0 +1,1 @@
+# helm-chart-multi-line-test
