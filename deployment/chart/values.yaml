@@ -1,0 +1,6 @@
+name: Test
+schedule: '0 0 * * *'
+
+image:
+  repository: mokhlesur96/testenv
+  tag: latest
